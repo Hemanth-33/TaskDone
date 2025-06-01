@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Bus Pass Application</title>
+</head>
+<body>
+    <section style="margin-left: 200px;margin-right: 200px;">
+        <fieldset style="background-color: rgb(198, 198, 253);border-radius: 30px;">
+            <div style="text-align: center;">
+
+            <img src="https://www.tgsrtc.telangana.gov.in/tsrtc-logo-compressed-image@5x.webp" width="50px">
+            <p style="color:rgb(0, 72, 228);font-size:25px"><b>TELANGANA STATE ROAD TRANSPORT CORPORATION<br>
+           </b></p>
+           <p style="font-size:25px;">
+            <b>GENERAL BUS PASS APPLICATION</b>
+           </p>
+        </div>
+        </fieldset>
+    </section>
+    <br>
+    <section style="margin-left: 200px;margin-right: 200px;">
+        <fieldset style="background-color: rgb(241, 248, 251);">
+            <legend style="background-color: rgb(3, 120, 244);color:white;font-size:20px;"><b>Application Details</b></legend>
+            <label for="name">Name</label>
+            <label style="color:red">*:</label>
+            <input type="text" id="name" name="name" size="50" placeholder="Enter your name upto 50 characters" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="fname"> Father's/Guardian Name</label>
+            <label style="color:red">*:</label>
+            <input type="text" id="fname" name="FatherName" required>
+            <br><br>
+            <label for="DateOfBirth">Date Of Birth</label>
+            <label style="color:red">*:</label>
+            <input type="date" id="DateOfBirth" name="DateOfBirth" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label >Gender</label>
+            <label style="color:red">*:</label>&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="gender" name="gender" value="male" >
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender" value="female" >
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <label >Age as on:</label>
+            <label for="years">Year(s)</label>
+            <input type="text" id="years" name="years" size="3">
+            <label for="months">Month(s)</label>
+            <input type="text" id="months" name="months" size="3">
+            <label for="days">Day(s)</label>
+            <input type="text" id="days" name="days" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="ano">Aadhar No</label>
+            <label style="color:red">*:</label>
+            <input type="text" id="ano" cols="12" required>
+            <br>
+            <br>
+            <label for="WhatsappNo">Whatsapp No</label>
+            <label style="color:red">*:</label>
+            <input type="text" id="WhatsappNo" name="WhatsappNo" placeholder="+91 - "  maxlength="10" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="email">Email</label>
+            <label style="color:red">*:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="photo">Photo</label>
+            <label style="color:red">*:</label>
+            <input type="file" id="photo">
+
+        </fieldset>
+    </section>
+    <br>
+    <section style="margin-left: 200px;margin-right: 200px;">
+        <fieldset style="background-color: rgb(241, 248, 251);">
+            <legend style="color:white;background-color:rgb(3, 120, 244);font-size:20px"><b>Residential Details</b></legend>
+            <label for="address" >Applicant's Address</label>
+            <label style="color:red">*:</label>
+            <textarea id="address" rows="5"></textarea>
+            <label for="dist" style="margin-left:450px">District</label>
+            <label style="color:red">*:</label>
+            <select id="dist">
+                <option selected disabled>--select--</option>
+                <option>Hyderabad</option>
+                <option>Adilabad</option>
+                <option>Jagtial</option>
+            </select>
+            <br>
+            <br>
+            <label for="mandal">Mandal</label>
+            <label style="color:red">*:</label>
+            <select id="mandal">
+                <option selected disabled>--select--</option>
+                <option>Ameerpet</option>
+                <option>Nampally</option>
+            </select>
+            <label for="village" style="margin-left:619px">Village</label>
+            <label style="color:red">*:</label>
+            <select id="village">
+                <option selected disabled>--select--</option>
+                <option>Hyderabad</option>
+            </select>
+            <br>
+            <br>
+            <label for="Pincode">Pincode</label>
+            <label style="color:red">*:</label>
+            <input type="text" size="6" id="Pincode" >
+        </feildset>
+    </section>
+    <br>
+     <section style="margin-left: 200px;margin-right: 200px;">
+        <fieldset style="background-color: rgb(241, 248, 251);">
+            <legend style="color:white;background-color:rgb(3, 120, 244);font-size:20px"><b>Pass Type Details</b></legend>
+            <center>
+                 <label for="city">City</label>
+            <label style="color:red">*:</label>
+            <select id="city">
+                <option  selected disabled>--select--</option>
+                <option>Hyderabad</option>
+            </select>
+            <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="passtype">Pass Type</label>
+            <label style="color:red">*:</label>
+            <select id="passtype" >
+                <option  selected disabled>--select--</option>
+                <option>Greater Pass</option>
+                <option>General Ordinary Route Pass MTLY</option>
+                <option>Ordinary Pass</option>
+                <option>General Metro Express Route Pass MTLY</option>
+                <option>Metro Express Pass</option>
+                <option>Metro Delux Pass</option>
+            </select>
+            </center>
+        </feildset>
+    </section>
+    <br>
+     <section style="margin-left: 200px;margin-right: 200px;">
+        <fieldset style="background-color: rgb(241, 248, 251);">
+            <legend style="color:white;background-color:rgb(3, 120, 244);font-size:20px"><b>Mode of payment & Pass Collection</b></legend>
+            <center>
+                <label for="paymode">Mode Of Payment</label>
+            <label style="color:red">*:</label>
+            <select id="paymode" >
+                <option  selected disabled>Select Payment Mode</option>
+                <option>payment at counter</option>
+            </select>
+            <br><br>
+            <label for="delivery">Pass Delivery Mode</label>
+            <label style="color:red">*:</label>
+            <select id="delivery" >
+                <option  selected disabled>Select Pass Delivery Mode</option>
+                <option>At counter</option>
+            </select>
+            <br>
+            <br>
+            <label for="collect" >Center at which you want to collect Pass</label>
+            <label style="color:red">*:</label>
+            <select id="collect" style="margin-right:130px;" >
+                <option selected disabled>--select--</option>
+                <option>RTC ABIDS - HYD</option>
+                <option>RTC LINGAMPALLY - HYD</option>
+                <option>RTC KBHP - HYD</option>
+            </select>
+            </center>
+        </feildset>
+    </section>
+    <br>
+    <br>
+    <center><input type="submit" value="submit" style="background-color: red; font-size:20px"></center>
+</body>
+</html>
