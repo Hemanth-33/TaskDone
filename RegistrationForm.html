@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+ <h1 style="text-align: center;margin-top: 3%;">Registration Form</h1>
+   <div style="margin-left:38% ;margin-top: 5%; width:10px">
+       
+         <table border="1px" cellspacing="4">
+        <tr>
+            <td style="background-color: rgb(35, 231, 245);"><label for="name">Enter Name</label></td>
+            <td style="background-color: rgb(35, 231, 245);"><input type="text" id="name" name="name" style="margin-left: 30px;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(35, 231, 245);"><label for="password">Enter Password</label></td>
+            <td style="background-color: rgb(35, 231, 245);"><input type="password" id="password" name="password" style="margin-left: 30px;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(35, 231, 245);"><label for="address">Enter Address</label></td>
+            <td style="background-color: rgb(35, 231, 245);"><textarea id="address" name="address" style="margin-left: 30px;"></textarea></td>
+        </tr>
+         <tr>
+            <td style="background-color: rgb(35, 231, 245);"><label>Select Game</label></td>
+            <td style="background-color: rgb(35, 231, 245);">
+                <div style="margin-left: 30px;">
+                <input type="checkbox" id="game" name="Hockey">
+                <label  for="game" >Hockey</label><br>
+                <input type="checkbox" id="game" name="Football">
+                <label  for="game">Football</label><br>
+                <input type="checkbox" id="game" name="Badminton">
+                <label  for="game">Badminton</label><br>
+                <input type="checkbox" id="game" name="Cricket">
+                <label  for="game">Cricket</label><br>
+                <input type="checkbox" id="game" name="Volleyball">
+                <label  for="game">Volleyball</label><br>
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <td style="background-color: rgb(35, 231, 245);"><label >Gender</label></td>
+            <td style="background-color: rgb(35, 231, 245);">
+               <div style="margin-left: 30px;">
+                 <input type="radio" id="gender" name="gender" value="male" >
+                <label for="male">Male</label>
+                <input type="radio" id="gender" name="gender" value="female" >
+                <label for="female">Female</label>
+               </div>
+            </td>
+        </tr>
+         <tr>
+            <td style="background-color: rgb(35, 231, 245);"><label for="age">Select your Age</label></td>
+            <td style="background-color: rgb(35, 231, 245);"><select id="age" style="margin-left: 30px;">
+                <option selected disabled>Select</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(35, 231, 245);"><label for="photo">Select Photo</label></td>
+            <td style="background-color: rgb(35, 231, 245);">
+                <input type="file" id="photo" style="margin-left: 30px;">
+            </td>
+        </tr>
+        <tr style="background-color: rgb(35, 231, 245);">
+            <td colspan="2" style="height:40px;">
+                <center>
+                    <button style="width:110px;height:35px">Click me</button>
+                    <button style="width:110px;height:35px">Reset</button>
+                    <button style="width:110px;height:35px">Submit</button>
+               </center>
+            </td>
+           
+        </tr>
+    </table>
+   </div>
+</body>
+</html>
