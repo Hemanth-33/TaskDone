@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger's Hub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        *{
+          box-sizing: border-box; 
+        }
+        #about{
+            display: flex;
+            margin-left: 2%;
+            margin-bottom: 10rem;
+            margin-top: 9rem;
+        }
+        .about-img{
+            height: 60rem;
+            width: 55rem;
+        
+        }
+      img{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+      .about-content{
+        height:60rem;
+        width: 40rem;
+        padding-top: 10%;
+        margin-left: 2%;
+        animation-name: about-cont;
+        animation-duration: 2s;
+        display: none;
+      }
+      #about:hover .about-content{
+        display: block;
+      }
+      @keyframes about-cont {
+        from{
+          transform: scale(0);
+        }
+        to{
+          transform: scale(1);
+        }
+      }
+      .about-us{
+        background-color: black;
+        color: white;
+        width: fit-content;
+        padding: 0.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 0.5rem;
+      }
+     #special-offers{
+      margin-top: 7%;
+      margin-left: 5%;
+      display: flex;
+     }
+     .special-left{
+      width: 40%;
+      
+     }
+     .special-img{
+      width: 70%;
+      margin-left: 20%;
+     }
+     .special-3{
+      border:1px solid;
+      width: fit-content;
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 20px;
+     }
+     .special-para-1{
+      display: flex;
+      gap: 10px;
+      color: rgb(154, 147, 147);
+      justify-content: center;
+     }
+     #side{
+      border-radius: 20px;
+      width: fit-content;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      background-color: lightcyan;
+      justify-content: end;
+       position: fixed;
+      right: 0%;
+      top: 25%;
+      z-index: 1;
+      color:grey;
+     }
+     .side-bar1,.side-bar2,.side-bar3,.side-bar4,.side-bar5,.side-bar6{
+      font-size: 3rem;
+      display: flex;
+      flex-direction: row-reverse;
+      
+     }
+     .side-cont1,.side-cont2,.side-cont3,.side-cont4,.side-cont5,.side-cont6{
+      display: none;
+      font-size: 25px;
+      padding-right: 30px;
+      padding-top: 10px;
+      width: fit-content;
+      color: black;
+    
+     }
+     #side .side-bar1:hover,#side .side-bar2:hover,#side .side-bar3:hover,#side .side-bar4:hover,#side .side-bar5:hover,#side .side-bar6:hover{
+      color: blue;
+     }
+    #side .side-bar1:hover .side-cont1{
+      display: block;
+     
+    }
+    #side .side-bar2:hover .side-cont2{
+      display: block;
+     
+    }
+    #side .side-bar3:hover .side-cont3{
+      display: block;
+     
+    }
+    #side .side-bar4:hover .side-cont4{
+      display: block;
+     
+    }
+    #side .side-bar5:hover .side-cont5{
+      display: block;
+     
+    }
+    #side .side-bar6:hover .side-cont6{
+      display: block;
+     
+    }
+   .special-right{
+      width: 45%;
+      height: 42rem;
+      text-align: center;
+      margin-left: 10rem;
+   }
+   .prices{
+    background-color: red;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: white;
+    margin-left: 7rem;
+   }
+   .price{
+    background-color: red;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    border-radius: 0.7rem;
+    color: white;
+     margin-left: 1rem;
+   }
+   .special-table{
+    height: 100%;
+    width: 70%;
+   }
+   #four-img{
+    display: flex;
+    gap: 5px;
+    margin-top: 15rem;
+   }
+   #trending{
+    display: flex;
+    gap:15px;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+   }
+   #trending div{
+    height: 35rem;
+    width: 28rem;
+    border-radius: 2rem;
+    background-color: rgb(255, 247, 247);
+    
+   }
+   #trending div img{
+    height: 23rem;
+    width: 27rem;
+   }
+   .head-jev{
+   
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1rem;
+   }
+   #home-nav{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+
+   }
+   #home1{
+    background-color: #eaffea;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    padding: 1.5rem;
+  
+   }
+a{
+  text-decoration: none;
+  color: red;
+}
+.h-in i{
+  color: red;
+}
+#menu{
+  background-color: black;
+  margin-top: 9rem;
+  
+}
+.menu-upper{
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.menu-lower{
+  display: flex;
+  padding-bottom: 5rem;
+}
+.menu-u-c{
+  margin-top: 1rem;
+  margin-left: 5rem;
+  animation-name: menu-cont;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes menu-cont{
+  from{
+    scale: 1;
+  }
+  to{
+    scale: 1.1;
+  }
+}
+#menu .menu-upper .menu-u-c .see-menu:hover{
+   background-color: red;
+}
+#menu .menu-lower .menu-u-c .see-menu:hover{
+   background-color: red;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+input{
+  font-size: 1.5rem;
+border-radius: 1.5rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+ #first{
+            width: 100%;
+            background-color: black;     
+            text-align: center;
+            margin-top: 9rem;
+            margin-right: 0px;
+            padding-top: 5rem;
+            position: relative;
+
+        }
+        #first .first-co{
+          position: absolute;
+          left: 35%;
+        }
+        #first .d img{
+            height:50rem;
+            width: 50rem;
+            animation-name: imgf;
+            animation-duration: 1s;      
+        }
+        @keyframes imgf{
+          from{
+            transform: scale(0);
+          }
+          to{
+            transform: scale(1);
+          }
+
+        }
+#first .d1{
+            color: white;
+            background-color: red;
+            width: fit-content;
+            padding: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-radius: 2rem;
+            font-size: 2rem;
+            position: absolute;
+            bottom: 18%;
+            left: 45%;
+            animation-name: see;
+            animation-duration: 2s;
+        }
+        @keyframes see{
+          from{
+            transform: translatey(10rem);
+          }
+          
+        }
+        #first .d1:hover{
+            background-color: blue;
+        }
+    </style>
+    <link rel="icon" href="https://media.licdn.com/dms/image/v2/D4D12AQGVw0sVZ7Kj-g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1673636348357?e=2147483647&v=beta&t=PSpU4mZFpMBmE14oWDnDwf5a8_4rdQUiCUKF_U-x584">
+</head>
+<body >
+  <section id="home"></section>
+   <section id="first">
+       <div class="first-co">
+         <div style="color: rgb(255, 40, 40);font-size: 3rem;font-weight: bold;"> CRISPY &nbsp;<span style="color: rgb(54, 120, 142)">TENDER</span></div>
+        <div style="font-size: 8rem;font-weight: bold;color: white;">BURGER</div>
+       </div>
+        <div class="d"> <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Layer-692.png" alt=""></div>
+       <div class="d1">SEE MORE</div>
+    </section>
+  
+        <section id="home1">
+          <div class="head-jev">Burger's Hub</div>
+          <nav id="home-nav">
+          <div class="h-in"><a href="#">Home</a></div>
+          <div class="h-in"><a href="#aabout">About</a></div>
+          <div class="h-in"><a href="#special-offerss">Offers</a></div>
+          <div class="h-in"><a href="#menuu">Menu</a></div>
+          <div class="h-in"><a href="#contact">Contact</a></div>
+          <div class="h-in"><i class="bi bi-basket3"></i><sup style="color: blue;background-color: lightblue;border-radius: 10rem;padding: 0.2rem;">3</sup></div>
+        </nav>
+        </section>
+ 
+    <section id="side">
+    <div class="side-bar1"><i class="bi bi-stack"></i></div>
+    <div class="side-bar2"><i class="bi bi-eyeglasses"></i></div>
+    <div class="side-bar3"><i class="bi bi-bag-fill"></i></div>
+    <div class="side-bar4"><i class="bi bi-question-circle"></i></div>
+    <div class="side-bar5"><i class="bi bi-record-circle-fill"></i></div>
+    <div class="side-bar6"><i class="bi bi-envelope"></i></div>
+  </section>
+  <section id="aabout"></section>
+    <section id="about">
+        <div class="about-img">
+            <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/food-photographer-david-fedulov-W1Yi4z375L0-unsplash.jpg" alt="pic">
+        </div>
+        <div class="about-content">
+            <div class="about-us">
+               <b>ABOUT US</b>
+            </div>
+            <br>
+           <div class="about-content-para1">
+                <span style="font-size: 5rem;font-weight: 800;line-height: 60px;">Delivering best ingredients for our trusty food lovers</span><br><br><br><br><br><br>
+                <span style="font-size: 1.5rem;line-height: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</span><br><br>
+                <span style="font-size: 1.5rem;font-weight: bold;line-height: 40px;">Risus commodo viverra maecenas accumsan lacus lalala vel facilisis.</span>
+           </div> 
+        </div>
+    </section>
+    <section id="special-offerss"></section>
+    <div style="font-size: 6rem;font-weight: bolder;margin-left: 5%;margin-bottom: 7%;margin-top: 19rem;">Special offers</div>
+    <section id="special-offers">
+      <div class="special-left">
+        <div style="color:white;background-color: red;width: fit-content;padding: 5px;border-radius: 5px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-bottom: 5%;margin-left: 10%;">NEW IN TOWN</div><br>
+        <div class="special-img">
+          <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679.jpg" alt="Ham Snadwich">
+        </div><br>
+        <div class="special-para">
+          <div style="font-size: 3rem;font-weight: bold;text-align: center;">Ham Sandwich</div><br>
+          <div class="special-para-1">
+            <div class="special-3">fat 26g</div>
+            <div class="special-3">sugars 34g</div>
+            <div class="special-3">carbs 26g</div>
+          </div>
+        </div>
+        <br><br><br>
+        <div style="font-size: 25px;line-height: 50px;color: rgb(144, 130, 130);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</div><br><br>
+        <span style="font-size: 4rem;font-weight: bolder;margin-right: 300px;">$14</span>
+        <span style="font-size: 1rem;font-weight: 600;background-color: black;color: white;padding: 15px;border-radius: 30px;"><span style="padding-right: 10px;"><i class="bi bi-plus-circle"></i></span>LEARN MORE</span>
+        
+      </div>
+      <div class="special-right">
+        <table class="special-table">
+          <tr >
+            <td><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679-copy-3.jpg" alt=""></td>
+            <td><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679-copy-4.jpg" alt=""></td>        
+          </tr>
+           <tr>
+            <td style="font-size: 1.6rem;font-weight: bold;text-align: center;">Juicy Beef<br>Burger Meal</td>
+            <td style="font-size: 1.6rem;font-weight: bold;text-align: center;">Choko Milkshake<br>From Heaven</td>
+          </tr>
+          <tr>
+            <td><div class="prices">$ 16</div></td>
+            <td><div class="prices">$ 8</div></td>
+          </tr>
+          <tr>
+            <td style="font-size: 1.3rem;font-weight: bold;">+ &nbsp;&nbsp;Add to cart</td>
+            <td style="font-size: 1.3rem;font-weight: bold;">+ &nbsp;&nbsp;Add to cart</td>
+          </tr>
+          <tr>
+            <td><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679-copy.jpg" alt=""></td>
+            <td><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679-copy-2.jpg" alt=""></td>
+          </tr>
+         <tr>
+            <td style="font-size: 1.6rem;font-weight: bold;text-align: center;">Blueberry<br>Waffles</td>
+            <td style="font-size: 1.6rem;font-weight: bold;text-align: center;">Medium Portion<br>of Fries</td>
+          </tr>
+          <tr>
+            <td><div class="prices">$ 4</div></td>
+            <td><div class="prices">$ 3</div></td>
+          </tr>
+          <tr>
+            <td style="font-size: 1.3rem;font-weight: bold;">+ &nbsp;&nbsp;Add to cart</td>
+            <td style="font-size: 1.3rem;font-weight: bold;">+ &nbsp;&nbsp;Add to cart</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="menuu"></section>
+     <section id="menu">
+      <section class="menu-upper">
+        <div class="menu-img1"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Layer-562.png" alt="fig-menu"></div>
+         <div class="menu-u-c">
+          <div style="color: white; background-color: red; width: fit-content;padding: 0.4rem; border-radius: 1rem;font-weight: bold;font-size: 2rem; margin-bottom: 2rem;">-25% &nbsp;OFF</div>
+          <div style="font-size: 4.5rem; font-weight: bolder; color: white; margin-bottom: 3rem;">Enjoy our specially<br>prepared burgers for you</div>
+          <div style="font-size: 1.5rem; font-weight: bolder;color: white; margin-bottom: 3rem;">Don't miss out on our daily special offers</div>
+          <div class="see-menu" style="font-size: 1.8rem;border: 0.1rem solid white;border-radius: 2.5rem; width: fit-content; padding: 1rem;padding-left:3rem; padding-right: 3rem;color: white;">SEE MENU</div>
+        </div>
+      </section>
+      <section class="menu-lower">
+        <div class="menu-u-c" style="margin-top: 5rem;">
+          <div style="color: white; background-color: red; width: fit-content;padding: 0.4rem; border-radius: 1rem;font-weight: bold;font-size: 2rem; margin-bottom: 2rem;">-15% &nbsp;OFF</div>
+          <div style="font-size: 4.5rem; font-weight: bolder; color: white; margin-bottom: 3rem;">New, amazing sandwich offers every day</div>
+          <div style="font-size: 1.5rem; font-weight: bolder;color: white; margin-bottom: 3rem;">Just add some of our juicy side dishes     </div>
+          <div class="see-menu" style="font-size: 1.8rem;border: 0.1rem solid white;border-radius: 2.5rem; width: fit-content; padding: 1rem;padding-left:3rem; padding-right: 3rem;color: white;">SEE MORE</div>
+        </div>
+        <div style="margin-left: 20rem;"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Layer-563.png" alt=""></div>
+      </section>
+          </section>
+    <div style="font-size: 4.5rem;font-weight: bold;margin-top: 10rem;margin-left: 1rem;margin-bottom: 3rem;">Trending Burgers</div>
+    <section id="trending">
+      <div class="trend-img"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/burger1.jpg" alt="">
+      <section style="font-size: 2.5rem;font-weight: bold;text-align: center;line-height: 4.5rem;">Juicy Burger</section>
+      <article style="font-size: 1.3rem;text-align: center;line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</article>
+      <article style="display: flex; gap: 14rem;">
+        <article class="price">$ 8</article>
+        <article style="font-size: 1.5rem;font-weight: bold;margin-top: 0.5rem;">+ &nbsp;Add to cart</article>
+      </article>
+      </div>
+      <div class="trend-img"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/burger4.jpg" alt="">
+      <section style="font-size: 2.5rem;font-weight: bold;text-align: center;line-height: 4.5rem;">Juicy Burger</section>
+      <article style="font-size: 1.3rem;text-align: center;line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</article>
+      <article style="display: flex; gap: 14rem;">
+        <article class="price">$ 8</article>
+        <article style="font-size: 1.5rem;font-weight: bold;margin-top: 0.5rem;">+ &nbsp;Add to cart</article>
+      </article>
+      </div>
+      <div class="trend-img"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/burger2.jpg" alt="">
+      <section style="font-size: 2.5rem;font-weight: bold;text-align: center;line-height: 4.5rem;">Juicy Burger</section>
+      <article style="font-size: 1.3rem;text-align: center;line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</article>
+      <article style="display: flex; gap: 14rem;">
+        <article class="price">$ 8</article>
+        <article style="font-size: 1.5rem;font-weight: bold;margin-top: 0.5rem;">+ &nbsp;Add to cart</article>
+      </article>
+    </div>
+      <div class="trend-img"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/burger3.jpg" alt="">
+      <section style="font-size: 2.5rem;font-weight: bold;text-align: center;line-height: 4.5rem;">Juicy Burger</section>
+      <article style="font-size: 1.3rem;text-align: center;line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</article>
+      <article style="display: flex; gap: 14rem;">
+        <article class="price">$ 8</article>
+        <article style="font-size: 1.5rem;font-weight: bold;margin-top: 0.5rem;">+ &nbsp;Add to cart</article>
+      </article>
+      </div>
+    </section>
+
+
+
+    <div style="font-size: 4.5rem;font-weight: bold;margin-top: 10rem;margin-left: 1rem;margin-bottom: 3rem;">Dessert Menu</div>
+    <section id="trending">
+      <div class="trend-img"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/dessert2.jpg" alt="">
+      <section style="font-size: 2.5rem;font-weight: bold;text-align: center;line-height: 4.5rem;">Strawberry Mix</section>
+      <article style="font-size: 1.3rem;text-align: center;line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</article>
+      <article style="display: flex; gap: 14rem;">
+        <article class="price">$ 8</article>
+        <article style="font-size: 1.5rem;font-weight: bold;margin-top: 0.5rem;">+ &nbsp;Add to cart</article>
+      </article>
+      </div>
+      <div class="trend-img"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/dessert1.jpg" alt="">
+      <section style="font-size: 2.5rem;font-weight: bold;text-align: center;line-height: 4.5rem;">Chocolate Mix</section>
+      <article style="font-size: 1.3rem;text-align: center;line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</article>
+      <article style="display: flex; gap: 14rem;">
+        <article class="price">$ 8</article>
+        <article style="font-size: 1.5rem;font-weight: bold;margin-top: 0.5rem;">+ &nbsp;Add to cart</article>
+      </article>
+      </div>
+      <div class="trend-img"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/dessert3.jpg" alt="">
+      <section style="font-size: 2.5rem;font-weight: bold;text-align: center;line-height: 4.5rem;">Apple Pie</section>
+      <article style="font-size: 1.3rem;text-align: center;line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</article>
+      <article style="display: flex; gap: 14rem;">
+        <article class="price">$ 8</article>
+        <article style="font-size: 1.5rem;font-weight: bold;margin-top: 0.5rem;">+ &nbsp;Add to cart</article>
+      </article>
+    </div>
+      <div class="trend-img"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/dessert4.jpg" alt="">
+      <section style="font-size: 2.5rem;font-weight: bold;text-align: center;line-height: 4.5rem;">Sunday Waffle</section>
+      <article style="font-size: 1.3rem;text-align: center;line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</article>
+      <article style="display: flex; gap: 14rem;">
+        <article class="price">$ 8</article>
+        <article style="font-size: 1.5rem;font-weight: bold;margin-top: 0.5rem;">+ &nbsp;Add to cart</article>
+      </article>
+      </div>
+    </section>
+
+
+
+
+    <section id="about" style="margin-top: 16rem;">
+        <div class="about-img">
+            <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/nate-johnston-ozHMc88WgcI-unsplash.jpg" alt="pic">
+        </div>
+        <div class="about-content">
+            <div class="about-us">
+               <b>TESTIMONIALS</b>
+            </div>
+            <br>
+           <div class="about-content-para1">
+                <span style="font-size: 5rem;font-weight: 800;line-height: 60px;">What our clients have to say</span><br><br><br><br><br>
+                <span style="font-size: 5rem;font-weight: 800;color: red;">99</span><br><br>
+                <span style="font-size: 1.5rem;line-height: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</span><br><br>
+                <span style="font-size: 1.5rem;font-weight: bold;line-height: 40px;">- Jhon Doe</span>
+           </div> 
+        </div>
+    </section>
+    <section id="four-img">
+      <div><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/insta2.jpg" alt=""></div>
+      <div><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/inta3.jpg" alt=""></div>
+      <div><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/inta4.jpg" alt=""></div>
+      <div><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/insta1.jpg" alt=""></div>
+    </section>
+    <section id="contact">
+    </section>
+     <footer >
+     <section>
+      <div style="font-size: 3rem; font-weight: bold;">Jevelin</div>
+      <div style="font-size: 1.5rem; margin-top: 1rem;">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do</div>
+      <div style="display: flex; gap: 1rem;font-size: 2rem; margin-top: 1.5rem;">
+        <div><i class="bi bi-instagram"></i></div>
+        <div><i class="bi bi-facebook"></i></div>
+        <div><i class="bi bi-twitter"></i></div>
+      </div>
+     </section>
+     <section >
+      <div style="font-size: 3rem; font-weight: bold;">Contact Us</div>
+      <div style="font-size: 2rem;">
+      <div><i style="color: red;" class="bi bi-geo-alt-fill"></i> Street name 1, City</div>
+      <div><i style="color: red;" class="bi bi-telephone-fill"></i> +569 2698 0256</div>
+      <div><i style="color: red;" class="bi bi-envelope-fill"></i> email@companyname.com</div>
+      <div><i style="color: red;" class="bi bi-envelope-fill"></i> email2@companyname.com</div>
+      </div>
+     </section>
+     <section>
+      <div style="font-size: 3rem;font-weight: bolder;text-align: center; margin-bottom: 1rem;">Subscribe</div>
+      <div><input type="mail" placeholder="Enter your email here..."></div>
+      <div style="background-color: red; color: white; width: fit-content;padding: 0.5rem; padding-left: 7rem; padding-right: 7rem; margin-top: 1rem; border-radius: 2rem;font-size: 1.5rem;">SUBSCRIBE</div>
+     </section>
+ </footer>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15222.224797962062!2d78.39559795!3d17.4809431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1751959111548!5m2!1sen!2sin" width="100%" height="500" style="border:0;margin: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
